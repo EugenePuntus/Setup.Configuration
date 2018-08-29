@@ -54,7 +54,7 @@ namespace Kapral.Setup.Configuration
 
             if (!result || appSettingCongig == null)
             {
-                throw new Exception("Not all settings are correct.");
+                throw new Exception(Properties.Resource.SettingNotCorrect);
             }
 
             var configFile = ConfigurationManager.OpenExeConfiguration(PathConfig);
